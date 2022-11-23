@@ -19,11 +19,11 @@ int main(){
     // }
     // return 0;
     
-    int a=0;
-    while(a>=0){
-        ++a;
-    }
-    --a;
-    cout<<a<<endl;
-    return 0;
+    // int a=0;
+    // while(a>=0){
+    //     ++a;
+    // }
+    // --a;
+    // cout<<a<<endl;
+    // return 0;
 }
