@@ -59,20 +59,22 @@ int main() {
             cout << "Nieprawidlowy wybor dzialania." << endl;
             return 0;
     }
-
-    
     skroc_ulamek(wynik_l, wynik_m);
-    
+
     if(wynik_l==wynik_m){
         cout<<"Wynik: "<<1<<endl;
     }else if(wynik_m == 1){
         cout<<"Wynik: "<<wynik_l<<endl;
     }else if(wynik_l > wynik_m){
-        
+        cout<<"Wynik: "<<wynik_l / wynik_m<<" "<<wynik_l-((wynik_l / wynik_m)*wynik_m)<<"/"<<wynik_m<<endl;
+    }else if(wynik_l < wynik_m){
+        cout << "Wynik: " << wynik_l << "/" << wynik_m << endl;
     }
-
-    
-    cout << "Wynik: " << wynik_l << "/" << wynik_m << endl;
+    // przykładowe działania dla wyniku równego 1 1/2:
+    // Mnożenie: 3/2 * 6/6
+    // Dzielenie: 5/5 / 2/3
+    // Dodawanie: 3/3 + 2/4
+    // Odejmowanie: 15/10 - 0/128
 
     return 0;
 }
